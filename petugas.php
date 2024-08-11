@@ -19,7 +19,7 @@ $result = mysqli_query($koneksi, $query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/update.css">
     <title>Dashboard Pengajuan topik skripsi</title>
 </head>
 <body>
@@ -64,7 +64,7 @@ $result = mysqli_query($koneksi, $query);
                                 <td>{$row['topik2']}</td>
                                 <td>{$row['topik3']}</td>
                                 <td>
-                                    <a href='edit.php?id={$row['id_judul']}'>Edit</a> |
+                                    <a href='update.php?id={$row['id_judul']}'>Edit</a> |
                                     <a href='delete.php?id={$row['id_judul']}' onclick=\"return confirm('Are you sure you want to delete this item?');\">Delete</a>
                                 </td>
                               </tr>";
